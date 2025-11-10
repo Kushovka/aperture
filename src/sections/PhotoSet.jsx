@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import PhotoComp from "../components/PhotoComp";
 import Settings from "../components/Settings";
 import bgPhoto1 from "/assets/photo2.png";
 import bgPhoto2 from "/assets/photo3.png";
@@ -7,19 +8,17 @@ import bgPhoto3 from "/assets/photo4.png";
 const PhotoSet = () => {
   return (
     <section className="pb-10 mx-auto max-w-max">
-      <div className="relative">
-        <img src={bgPhoto1} className="w-screen h-full" alt="" />
-        <div className="absolute right-10 flex flex-col top-1/2  w-[17%]">
-          <h1 className="text-[16px] font-light">Sunset at Mount Fuji</h1>
-          <p className="text-[14px] font-light text-white01">
-            Duis tristique sed lorem a vestibulum. Cras commodo consequat orci,
-            in convallis risus egestas non.
-          </p>
-        </div>
-        <div className="absolute bottom-0 right-0 p-[40px]">
-          <Settings frame={"1''"} cam={"f/16"} iso={"400"} map={"Japan"} />
-        </div>
-      </div>
+      <PhotoComp
+        title={"Sunset at Mount Fuji"}
+        text={
+          "Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non."
+        }
+        frame={"1''"}
+        cam={"f/16"}
+        iso={"400"}
+        map={"Japan"}
+        img={bgPhoto1}
+      />
 
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-[15px] w-1/2 pl-[100px]">
@@ -52,24 +51,17 @@ const PhotoSet = () => {
         </div>
       </div>
 
-      <div className="relative">
-        <img src={bgPhoto3} className="w-screen h-full" alt="" />
-        <div className="absolute right-10 flex flex-col top-1/2  w-[17%]">
-          <h1 className="text-[16px] font-light">Sunset at Mount Fuji</h1>
-          <p className="text-[14px] font-light text-white01">
-            Duis tristique sed lorem a vestibulum. Cras commodo consequat orci,
-            in convallis risus egestas non.
-          </p>
-        </div>
-        <div className="absolute bottom-0 right-0 p-[40px]">
-          <Settings
-            frame={"1/400s"}
-            cam={"f/3,5"}
-            iso={"100"}
-            map={"Costa Rica"}
-          />
-        </div>
-      </div>
+      <PhotoComp
+        title={"Monstera Leafs"}
+        text={
+          "Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt."
+        }
+        frame={"1/400s"}
+        cam={"f/3,5"}
+        iso={"100"}
+        map={"Costa Rica"}
+        img={bgPhoto3}
+      />
     </section>
   );
 };

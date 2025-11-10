@@ -3,6 +3,17 @@ import photo2 from "/assets/photoSection/img2.png";
 import photo3 from "/assets/photoSection/img3.png";
 import photo4 from "/assets/photoSection/img4.png";
 
+import img1 from "/assets/clientsImg/img1.svg";
+import img2 from "/assets/clientsImg/img2.svg";
+import img3 from "/assets/clientsImg/img3.svg";
+import img4 from "/assets/clientsImg/img4.svg";
+import img5 from "/assets/clientsImg/img5.svg";
+
+import sliderImg1 from "/assets/hero_img.png";
+import sliderImg2 from "/assets/photo2.png";
+import sliderImg3 from "/assets/photo4.png";
+import sliderImg4 from "/assets/photo5.png";
+
 const headerItems = [
   {
     name: "Business areas",
@@ -53,4 +64,84 @@ const imgPhoto = [
   },
 ];
 
-export { headerItems, imgPhoto };
+const clientsItems = [
+  {
+    img: img1,
+    alt: "img",
+  },
+  {
+    img: img2,
+    alt: "img",
+  },
+  {
+    img: img3,
+    alt: "img",
+  },
+  {
+    img: img4,
+    alt: "img",
+  },
+  {
+    img: img5,
+    alt: "img",
+  },
+];
+
+const footerItems_1 = [
+  {
+    text: "Product Photography",
+  },
+  {
+    text: "Architecture Photography",
+  },
+  {
+    text: "Drone Photography",
+  },
+  {
+    text: "Wildlife Photography",
+  },
+];
+const footerItems_2 = [
+  {
+    text: "Gear cage",
+  },
+  {
+    text: "Featured images",
+  },
+  {
+    text: "Contact",
+  },
+  {
+    text: "Style guide",
+  },
+  {
+    text: "Instructions",
+  },
+  {
+    text: "Changelog",
+  },
+];
+
+const sliderItems = [
+  {
+    img: sliderImg1,
+  },
+  {
+    img: sliderImg2,
+  },
+  {
+    img: sliderImg3,
+  },
+  {
+    img: sliderImg4,
+  },
+];
+
+export {
+  headerItems,
+  imgPhoto,
+  clientsItems,
+  footerItems_1,
+  footerItems_2,
+  sliderItems,
+};
